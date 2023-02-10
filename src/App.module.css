@@ -1,0 +1,57 @@
+.container {
+    /*display: grid;*/
+    /*grid-template-columns: 50px 50px 50px;*/
+    /*grid-template-rows: 50px 50px 50px;*/
+    /*grid-template-areas: "bo bf bf"*/
+    /*                     "g g g"*/
+    /*                     "so sf sf";*/
+}
+
+.buttonOn {
+    grid-area: bo;
+
+}
+
+.buttonOff {
+    grid-area: bf;
+
+}
+
+.dotOn {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dotOff {
+    grid-area: g;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px;
+
+}
+
+.squareOn {
+    grid-area: so;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    display: inline-block;
+}
+
+.squareOff {
+    grid-area: sf;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: inline-block;
+    border: solid black;
+
+}
+
+

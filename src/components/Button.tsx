@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import s from './OnOff/onoff.module.css'
+
 type ButtonType = {
     style: string
     title: string

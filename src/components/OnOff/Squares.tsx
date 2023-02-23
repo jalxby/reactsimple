@@ -4,7 +4,7 @@ type SquaresType = {
     style: string
 }
 
-const Squares: FC<SquaresType>= (props) => {
+const Squares: FC<SquaresType> = (props) => {
     return (
         <div>
             <span className={props.style}></span>

@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+
 type CircleType = {
     style: string
 }

@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
+import {useParams} from "react-router-dom";
 
 type OnOffPropsType = {
     // on: boolean
 
-    setOnOff: (on: boolean) => void
+    //setOnOff: (on: boolean) => void
 }
 
+export const UncontrolledOnOff = (props: OnOffPropsType) => {
 
-export const OnOffUncontrolled = (props: OnOffPropsType) => {
 
     const [onOff, setOnOff] = useState(false)
     const onStyle = {
@@ -40,22 +41,22 @@ export const OnOffUncontrolled = (props: OnOffPropsType) => {
 
     const setOnHandler = () => {
         setOnOff(true)
-        props.setOnOff(true)
+        setOnOff(true)
     }
 
     const setOffHandler = () => {
         setOnOff(false)
-        props.setOnOff(false)
+        setOnOff(false)
     }
 
     return (
-        <div>
+        <>
             <div style={onStyle} onClick={setOnHandler}>on
             </div>
             <div style={offStyle} onClick={setOffHandler}>off
             </div>
             <div style={indicatorStyle}></div>
-        </div>
+        </>
     );
 };
 

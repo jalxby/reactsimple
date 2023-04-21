@@ -1,15 +1,15 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 
 type SquaresType = {
-    style: string
-}
+  style: string;
+};
 
 const Squares: FC<SquaresType> = (props) => {
-    return (
-        <div>
-            <span className={props.style}></span>
-        </div>
-    );
+  return (
+    <div>
+      <span className={props.style}></span>
+    </div>
+  );
 };
 
 export default Squares;

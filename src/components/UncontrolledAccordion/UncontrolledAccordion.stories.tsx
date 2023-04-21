@@ -1,17 +1,16 @@
-import {ComponentMeta} from '@storybook/react';
+import { ComponentMeta } from "@storybook/react";
 import React from "react";
-import {UncontrolledAccordion} from "./UncontrolledAccordion";
+import { UncontrolledAccordion } from "./UncontrolledAccordion";
 
 export default {
-    title: 'UncontrolledAccordion stories',
-    component: UncontrolledAccordion,
-    argTypes: {
-        titleValue: {
-            type: "string",
-            description: "Title of accordion"
-        }
+  title: "UncontrolledAccordion stories",
+  component: UncontrolledAccordion,
+  argTypes: {
+    titleValue: {
+      type: "string",
+      description: "Title of accordion",
     },
-
+  },
 } as ComponentMeta<typeof UncontrolledAccordion>;
 
 // const Template: ComponentStory<typeof UncontrolledAccordion> = (args) => <UncontrolledAccordion   {...args} />;
@@ -29,8 +28,8 @@ export default {
 // }
 
 export const ModeCollapsedChanging = () => {
-    return <UncontrolledAccordion titleValue={'--Menu--'}/>
-}
+  return <UncontrolledAccordion titleValue={"--Menu--"} />;
+};
 // export const Off = Template.bind({});
 //
 // Off.args = {
@@ -42,6 +41,3 @@ export const ModeCollapsedChanging = () => {
 //     let [onOff,setonOff]=useState<boolean>(false);
 //     return <OnOff onOff={onOff} setOnOff={setonOff}/>
 // }
-
-
-

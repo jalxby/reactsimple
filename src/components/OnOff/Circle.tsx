@@ -1,14 +1,14 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 
 type CircleType = {
-    style: string
-}
+  style: string;
+};
 const Circle: FC<CircleType> = (props) => {
-    return (
-        <div>
-            <span className={props.style}></span>
-        </div>
-    );
+  return (
+    <div>
+      <span className={props.style}></span>
+    </div>
+  );
 };
 
 export default Circle;
